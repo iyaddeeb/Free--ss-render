@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: free-ss
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: METHOD
+        value: aes-256-gcm
+      - key: TIMEOUT
+        value: "300"
+      # حتضيف PASSWORD يدوي من لوحة التحكم لأمان أكثر
